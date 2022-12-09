@@ -1,0 +1,14 @@
+#!/bin/bash
+#include<stdio.h>
+
+/**
+ *main- Entry point
+ *
+ *Description: This program prints ints some strings
+ *Return: Returns an integer
+ */
+int main(void)
+{
+	printf("Hello World!\n");
+	return (0);
+}
