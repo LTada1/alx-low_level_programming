@@ -3,7 +3,7 @@
 /**
  *main- Entry point
  *puts - print some strings
- *@_prog :variable
+ *@x:variable
  *
  *Description: this program prints output ising puts
  *
@@ -12,9 +12,9 @@
 
 int main(void)
 {
-	char _prog[] = "\"Programming is like building a multilingual puzzle";
+	char x[] = "\"Programming is like building a multilingual puzzle";
 
-	puts(_prog);
+	puts(x);
 
 	return (0);
 }
