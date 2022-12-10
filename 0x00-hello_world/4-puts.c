@@ -1,17 +1,15 @@
 #include<stdio.h>
 
 /**
- *main- Entry point
- *puts - print some strings
+ * main- Entry point
+ * puts: Prints string
  *
- *Description: this program prints output ising puts
- *
- *Return: Always 0 success
+ * Return: Always 0 success
  */
 
 int main(void)
 {
-	puts("stderr,\"programming is like building a multilingual puzzle");
-
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
+
 }
