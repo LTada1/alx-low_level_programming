@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	char x[] = "\"Programming is like building a multilingual puzzle";
+	char x[51] = "\"Programming is like building a multilingual puzzle";
 
 	puts(x);
 
