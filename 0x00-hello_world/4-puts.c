@@ -10,8 +10,7 @@
  *Return: Always 0 success
  */
 
-int main(void)
-{
+int main(void){
 	char x[51] = "\"Programming is like building a multilingual puzzle";
 
 	puts(x);
