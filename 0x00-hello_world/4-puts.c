@@ -3,7 +3,6 @@
 /**
  *main- Entry point
  *puts - print some strings
- *@x:variable
  *
  *Description: this program prints output ising puts
  *
@@ -12,8 +11,6 @@
 
 int main(void)
 {
-	/*char x[] = "\"Programming is like building a multilingual puzzle";*/
-
 	puts("\"programming is like building a multilingual puzzle");
 
 	return (0);
