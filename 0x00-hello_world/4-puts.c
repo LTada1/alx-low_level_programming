@@ -10,10 +10,11 @@
  *Return: Always 0 success
  */
 
-int main(void){
-	char x[51] = "\"Programming is like building a multilingual puzzle";
+int main(void)
+{
+	/*char x[] = "\"Programming is like building a multilingual puzzle";*/
 
-	puts(x);
+	puts("\"programming is like building a multilingual puzzle");
 
 	return (0);
 }
