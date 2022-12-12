@@ -12,7 +12,8 @@
 int main(void)
 {
 	char al = 'a';
-	while (al< 'z')
+
+	while (al <= 'z')
 	{
 		putchar(al);
 		al++;
