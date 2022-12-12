@@ -24,7 +24,6 @@ int main(void)
 		al2++;
 	}
 	putchar('\n');
-	return (0);
-	
+	return (0);	
 }
 
