@@ -14,22 +14,16 @@ int main(void)
 {
 	char al = 'a';
 	char al2 = 'A';
-
-	if (al = 'a')
+	
+	while (al <= 'z');
 	{
-		while (al <= 'z');
-		{
-			putchar(al);
-			al++;
-		}
-	}
-	else 
+		putchar(al);
+		al++;
+	} 
+	while (al2 = 'A');
 	{
-		while (al2 = 'A');
-		{
-			putchar(al2);
-			al2++;
-		}
+	  	putchar(al2);
+		al2++;
 	}
 	putchar('\n');
 	return (0);
