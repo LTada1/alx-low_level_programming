@@ -2,14 +2,37 @@
 
 /**
  * main- Entry point
+ *putchar:prints alphabbet in small and capital letter
+ *al:is a variable
  *
- *
+ * 
  * Return:Always 0 success
  *
  */
 
 int main(void)
 {
+	char al = 'a';
+	char al2 = 'A';
 
+	if (al = 'a')
+	{
+		while (al <= 'z');
+		{
+			putchar(al);
+			al++;
+		}
+	}
+	else 
+	{
+		while (al2 = 'A');
+		{
+			putchar(al2);
+			al2++;
+		}
+	}
+	putchar('\n');
+	return (0);
+	
 }
 
