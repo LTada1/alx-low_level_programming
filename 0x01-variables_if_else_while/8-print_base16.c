@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 /**
- * main- Entry Point
- *putchar: print all base 16 digits
+ * main- Entry goint
+g*putchar: print all base 16 digits
  *
  *
  *
