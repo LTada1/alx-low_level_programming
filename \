@@ -1,0 +1,19 @@
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v165)
+"   /root/alx-low_level_programming
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../
+./
+.git/
+0x00-hello_world/
+0x01-variables_if_else_while/
+0x02-functions_nested_loops/
+0x05-pointers_arrays_strings/
+main.h*
+.main.h.swn
+.main.h.swo
+README.mad
+.main.h.swp
