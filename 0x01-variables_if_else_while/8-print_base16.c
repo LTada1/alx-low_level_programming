@@ -6,24 +6,24 @@ g*putchar: print all base 16 digits
  *
  *
  *
- *
- *
  * Retrun:Always 0 success
  */
 
 int main(void)
 {
-	int i;
+	int lu;
+	char ka;
 
-	for (i = 48; i < 58; i++)
+	for (lu = 48; lu <= 57; lu++)
 	{
-		putchar(i);
+		putchar(lu);
+		if (lu <= 9)
+			break;
 	}
-	for (i = 'a'; i <= 'f'; i++)
+	for (ka = 'a'; ka <= 'f'; ka++)
 	{
-		putchar(i);
+		putchar(ka);
 	}
 	putchar('\n');
-
 	return (0);
 }
