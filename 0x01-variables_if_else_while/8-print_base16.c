@@ -2,9 +2,10 @@
 
 /**
  * main- Entry goint
- * putchar: print all base 16 digits
+ * putchar:function
  *
- * Description: print all hex number
+ * Description:This program print all hex numbers
+ * main:returns an integer value
  *
  * Retrun:Always 0 success
  */
