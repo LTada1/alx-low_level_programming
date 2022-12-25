@@ -9,7 +9,7 @@
  * Retrun:Always 0 success
  */
 
-int main(void)
+int main(void) /*returns an int*/
 {
 	int lu;
 	char ka;
