@@ -2,9 +2,9 @@
 
 /**
  * main- Entry goint
-g*putchar: print all base 16 digits
+ * putchar: print all base 16 digits
  *
- *
+ * Description: print all hex number
  *
  * Retrun:Always 0 success
  */
