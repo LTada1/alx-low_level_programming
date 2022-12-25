@@ -2,28 +2,28 @@
 
 /**
  * main- Entry Point
+ * ptchar: function
+ * ch: variable
  *
- *
- *
- *
- *
+ * Description: This program print numbers using unformatted output function
  * Return:Always 0 success
  */
 
 int main(void)
 {
-	int i;
+	int ch = 48;
 
-	for (i = 48; i < 58; i++)
+	while (ch <= 57)
 	{
-		putchar(i);
-	}
-	if (i != 57)
-	{
-		putchar(',');
-		putchar(' ');
+		putchar(ch);
+		ch++;
+		if (ch <= 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
-
 	return (0);
+
 }
