@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _putchar- is funtction
+ * print_alphabet_x10- is funtction
  *
  * Description:This program will print a-z,
  * in 10 differrent lines
