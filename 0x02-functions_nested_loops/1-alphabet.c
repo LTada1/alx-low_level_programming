@@ -11,10 +11,10 @@
  * Return:Always 0 success
  */
 
-void print_alphabet(void) /*This function prints alphabets from a-z and a new line*/
+void print_alphabet(void)/* This program prints alphabets a-z*/
 {
 	char lu;
-	
+
 	for (lu = 'a'; lu <= 'z'; lu++)
 	{
 		_putchar(lu);
