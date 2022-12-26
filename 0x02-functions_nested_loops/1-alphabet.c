@@ -2,8 +2,7 @@
 #include"main.h"
 
 /**
- * main-Entry Point
- * print_alphabet
+ * print_alphabet- print a-z alphabet
  *
  * Description: This program print alphabets a-z,
  * and a new line

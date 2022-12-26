@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * main-Entry Point
- * _putchar: is funtction
+ * _putchar- is funtction
  *
  * Description:This program will print a-z,
  * in 10 differrent lines
