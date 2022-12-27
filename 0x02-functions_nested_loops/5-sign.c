@@ -15,7 +15,7 @@ if (n > 48)
 _putchar(43);
 return (1);
 }
-else if (n = 48)
+else if (n <= 48)
 {
 _putchar(48);
 return (0);
