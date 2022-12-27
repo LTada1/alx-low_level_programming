@@ -2,9 +2,9 @@
 #include"main.h"
 
 /**
- * b - Any integer value
- *
  *  _abs - check the code.
+ * @b: Any integer value
+ *
  *
  * Return: Always 0 success
  */
