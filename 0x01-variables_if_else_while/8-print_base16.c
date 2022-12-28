@@ -3,12 +3,8 @@
 /**
  * main- Entry goint
  * putchar:function
- * @return: return an integer
  *
- * Description:This program print all hex numbers
- * main:returns an integer value
- *
- * Retrun:Always 0 success
+ * Retrun: Always 0 (Success)
  */
 
 int main(void) /*returns an int*/
