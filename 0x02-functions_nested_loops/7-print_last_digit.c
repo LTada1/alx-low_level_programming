@@ -9,11 +9,15 @@
  */
 
 int print_last_digit(int i)
-{	
-
-        int last_digit=i%10;
-
-        printf("%d", last_digit);
-        return(last_digit);
+{
+int last_digit;
+	
+last_digit=i%10;
+if (last_digit<0)
+{
+last_digit=last_digit * -1;
+putchar(last_digit + '0');
+}
+return(last_digit);
 }
 
