@@ -2,12 +2,12 @@
 
 /**
  * main- Entry goint
- * putchar:function
  *
  * Retrun: Always 0 (Success)
  */
 
-int main(void) /*returns an int*/
+int main(void)
+
 {
 	int lu;
 	char ka;
@@ -23,5 +23,6 @@ int main(void) /*returns an int*/
 		putchar(ka);
 	}
 	putchar('\n');
+
 	return (0); /* return an integer*/
 }
