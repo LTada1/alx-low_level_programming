@@ -7,32 +7,23 @@
  * Return: Always(0) Success
 */
 
-int main(void)
+int main()
 {
-	int i, j;
-
-	for (i = 48; i < 58; i++)
-	{
-		for (j = 48; j < 58; j++)
-		{
-			if (i == j)
-			{
-				continue;
-			}
-			putchar(i);
-			putchar(j);
-			if (i == 56 && j == 57)
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+    char lu;
+    char l;
+    for (lu=48; lu<57; lu++)
+     {
+        for (l=48; l<57; l++)
+        {
+        if (lu==l)
+        {
+            continue;
+        }
+        putchar(lu);
+        putchar(l);
+        putchar(44);
+        putchar(32);
+        }
+     }
+        return(0);
 }
