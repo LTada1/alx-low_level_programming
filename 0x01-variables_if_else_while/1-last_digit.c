@@ -2,22 +2,25 @@
 #include <time.h>
 #include<stdio.h>
 
-/* more headers goes there */
+/** main - Entry Point 
+ * 
+ * Return:Always 0 success
+ */
 
-/* betty style doc for function main goes there */
 
-int main(void) /* main - Entry Point */
+int main(void)
 
 {
 	int n;
 	int ldigit;
+	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	ldigit = n % 10;
 	
 	if (ldigit > 5)
 	{
-		printf(" Last digit of %d is %d and is greater than 5", n, ldigit);
+		printf("Last digit of %d is %d and is greater than 5", n, ldigit);
 	}
 	else if (ldigit == 0)
 	{
