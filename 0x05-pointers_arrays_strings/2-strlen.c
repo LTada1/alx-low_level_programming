@@ -3,6 +3,7 @@
 
 /**
  * _strlen -  returns the length of a string
+ * @*s:argument
  * @len:Variable
  *
  * Description: digits should not be repeated twice
@@ -13,7 +14,7 @@ int _strlen(char *s)
 {
 int len;
 
-len=strlen(s);
+len = strlen (s);
 return(len);
 }
 
