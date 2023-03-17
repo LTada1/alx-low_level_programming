@@ -4,7 +4,7 @@
  * main - Entry Point
  * printf: prints to stdout
  *
- * return: Always 0 success
+ * return: Always 0 success 
  */
 
 int main(void)
