@@ -3,7 +3,7 @@
 /**
  * main - Where the program starts
  * puts: prints string
- * @str: An array
+ * @str: array
  *
  * Return: Always 0 success
  */
