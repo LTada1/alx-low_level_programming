@@ -3,7 +3,6 @@
 /**
  * main - Entry Point
  * printf - Print strings
- * @sizeof: Sizeof opeartor
  *
  * Return: Always 0 success
  */
