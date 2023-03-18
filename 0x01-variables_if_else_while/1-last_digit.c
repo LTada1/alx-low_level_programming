@@ -5,7 +5,6 @@
 /**
  * main - Entry Point
  * printf: Print string
- * @m: A variable
  * Return: Always 0 success
  */
 
