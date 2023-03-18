@@ -5,7 +5,8 @@
 /**
  * main - Entry Point
  * printf: prints strings
- * @n: Variable
+ * 
+ * Return: Always 0 success
  */
 
 /* betty style doc for function main goes there */
