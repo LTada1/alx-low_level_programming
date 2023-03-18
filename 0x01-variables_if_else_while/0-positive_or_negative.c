@@ -5,7 +5,6 @@
 /**
  * main - Entry Point
  * printf: prints strings
- * 
  * Return: Always 0 success
  */
 
