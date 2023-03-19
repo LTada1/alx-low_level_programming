@@ -12,17 +12,16 @@ int main(void)
 
 	numb = 48;
 	abc = 'a';
-
-	while (numb <= 57 )
+	while (abc <= 'f')
 	{
-		putchar(numb);
-		numb++;
-		if (numb == 57)
-		while (abc <= 'f')
+		if (numb != 57)
+		while (numb <= 57)
 		{
+			putchar(numb);
+			numb++;
+		}
 		putchar(abc);
 		abc++;
-		}
 	}
 	putchar('\n');
 

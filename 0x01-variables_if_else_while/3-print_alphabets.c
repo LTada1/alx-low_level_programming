@@ -1,5 +1,4 @@
 #include <stdio.h>
-  
 /**
  * main - Entry point
  * putchar: Print Character one at a time
@@ -9,14 +8,22 @@
 int main(void)
 {
           char abc;
- 
-          while (abc <= 'z' || <= 'Z')
+	  char ABC;
+
+	  abc = 'a';
+	  ABC = 'A';
+	  while (ABC <= 'Z')
           {
-                  putchar(abc);
-                  abc++;
+		  if (abc != 'z')
+			  while (abc <= 'z')
+			  {
+				  putchar(abc);
+				  abc++;
+			  }
+		  putchar(ABC);
+		  ABC++;
           }
           putchar('\n');
  
           return (0);
 }
-
