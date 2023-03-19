@@ -15,8 +15,10 @@ int main(void)
 	{
 		putchar(numb);
 		if (numb != 57)
+		{
 		putchar(44);
 		putchar(32);
+		}
 		numb++;
 	}
 	putchar('\n');
