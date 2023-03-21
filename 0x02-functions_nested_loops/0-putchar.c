@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 /**
  * main - Entry point
  * putchar: Print Character one at a time
@@ -13,8 +14,8 @@ int main(void)
 
 	while (i <= strlen(str))
 	{
-		putchar(str[i]);
-		str++;
+		_putchar(str[i]);
+		i++;
 	}
 	putchar('\n');
 
