@@ -4,18 +4,16 @@
 /**
  * main - Entry point
  * putchar: Print character one at a time
- * @str: Variable
- * @i: Variable
  *
  * Return: 1
  */
 
-int main(void)
+int main()
 {
-	long unsigned int i = 0;
-	char str [58] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	unsigned int i = 0;
+	char str [] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	while (i <= strlen(str))
+	while (i < strlen(str))
 	{
 		putchar(strlen(str));
 	}
