@@ -15,7 +15,8 @@ int main(void)
 
 	while (i < strlen(str))
 	{
-		putchar(strlen(str));
+		putchar(str[i]);
+		i++;
 	}
 	putchar('\n');
 
