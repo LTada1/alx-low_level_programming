@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * _islower: checks for lowercase character
+ * _islower - checks for lowercase character
+ * @c: Variable
  * Return: Always 0 Success
  */
 
@@ -10,6 +10,6 @@ int _islower(int c)
 	c = 97;
 	if (c <= 122)
 		return (1);
-	else 
+	else
 		return (0);
 }
