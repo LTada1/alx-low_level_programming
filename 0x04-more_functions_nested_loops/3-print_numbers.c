@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * print_numbers - checks for lowercase character
- * @c: Variable
  * Return: Always absolute
  */
 
