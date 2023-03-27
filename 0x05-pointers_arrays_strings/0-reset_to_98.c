@@ -3,6 +3,7 @@
 
 /**
  * reset_to_98 - Update value of variable passed to it
+ * @n: pointer variable
  *
  * Return: Always 0.
  */
