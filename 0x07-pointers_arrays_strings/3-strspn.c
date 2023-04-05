@@ -15,15 +15,11 @@ int _strspn(char *s, char *accept)
 
 	for (; *s; s++)
 	{
-		for (; *accept != '\0'; accept++)
+		for (; *accept; accept++)
 		{
 			len2++;
 			if (*s == *accept)
-			{
 				break;
-			}
-			else if (*accept + 1 == '\0')
-				return (len2);
 		}
 	}
 	return (len2);
