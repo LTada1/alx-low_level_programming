@@ -11,17 +11,20 @@
 
 int _strspn(char *s, char *accept)
 {
-	int len1, len2;
+	int len2 = 0;
 
-	for (len1 = 0; *accept == '\0'; accept++)
+	for (; *s; s++)
 	{
-		len1++;
+		for (; *accept != '\0'; accept++)
+		{
+			len2++;
+			if (*s == *accept)
+			{
+				break;
+			}
+			else if (*accept + 1 == '\0')
+				return (len2);
+		}
 	}
-	for (len2 = 0; *s != '\0'; s++)
-	{
-		if (*s == *accept)
-			break;
-		len2++;
-	}
-	return (len2 + 1);
+	return (len2);
 }
