@@ -3,13 +3,13 @@
 /**
  * main - prints program name
  * @argc: number of arguments
- * argv@: argurment vector
+ * @argv: argurment vector
  *
  * Return: On success 0.
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	(void) argv[0];
 	return (0);
 }
