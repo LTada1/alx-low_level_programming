@@ -4,11 +4,10 @@
 /**
  * main - prints program name
  * @argc: number of arguments
- * @: argurment vector
+ * @argv: argurment vector
  *
  * Return: On success 0.
  */
- 
 int main(int argc, char *argv[])
 {
 	(void) argc;
