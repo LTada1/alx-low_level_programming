@@ -10,21 +10,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int multi, i;
+	int ad_d, i;
 
-	multi = 1;
+	ad_d = 0;
 	(void) argc;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			int x = strtol(argv[i], NULL, 10);
+			char y = 48;
 
-			multi *= x;
+			if (x  >= y)
+			ad_d += x;
+			else
+				printf("Error\n");
 		}
-		printf("%d\n", multi);
+		printf("%d\n", ad_d);
 	}
 	else
-		printf("Error\n");
+		printf("0\n");
 	return (1);
 }
