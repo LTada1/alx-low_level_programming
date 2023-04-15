@@ -15,5 +15,6 @@ void *malloc_checked(unsigned int b)
 	chat = malloc(b);
 	if (chat == NULL)
 		exit(98);
+	
 	return (chat);
 }
