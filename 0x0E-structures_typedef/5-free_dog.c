@@ -1,10 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * init_dog - Initializes a struct type
- * @name: member
- * @age: member
- * @owner: member
+ * free_dog - Initializes a struct type
  * @d: member
  *
  * Return: null.
