@@ -8,7 +8,6 @@
  *
  * Gives information about a particular dog.
  */
-
 struct dog
 {
 	char *name;
