@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 #include <stdarg.h>
+
 /**
- * print_numbers - 
+ * print_numbers - Print numbers
  * @n: number of parameters
- * @seperator: 
+ * @separator: string argument
  *
  * Return: null.
  */
@@ -13,10 +14,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i, j;
 	va_list vars;
-	va_start(vars, n);
 
-	if (separator == NULL)
-		return ;
+	va_start(vars, n);
 	for (i = 0; i < n; i++)
 	{
 		j = va_arg(vars, int);
@@ -26,4 +25,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
+	va_end(vars);
 }
