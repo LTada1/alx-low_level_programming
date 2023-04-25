@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for ALX School students.
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string pointer
  *
- * Return: Always 0.
+ * Return: pointer.
  */
 
 char *_strdup(char *str)
