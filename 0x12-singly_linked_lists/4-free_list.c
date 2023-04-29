@@ -11,9 +11,9 @@
  */
 void free_list(list_t *head)
 {
-	struct list_s* ptr;
+	struct list_s *ptr;
 
-	while (head != NULL)
+	while (head)
 	{
 		ptr = head->next;
 		free(head->str);
