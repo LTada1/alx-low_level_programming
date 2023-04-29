@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "lists.h"
+
+void first(void) __attribute__ ((constructor));
 
 /**
  * first - execute before main.
