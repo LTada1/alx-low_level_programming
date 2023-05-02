@@ -15,7 +15,7 @@ int pop_listint(listint_t **head)
 	struct listint_s *tmp;
 	int no;
 
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return (0);
 	else if ((*head)->next == NULL)
 	{
