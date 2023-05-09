@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * read_textfile - open,read and write file content
+ * @filename: Name of file to be manipulated
+ * @letters: sizeof bytes
  *
- * Return: Always 0.
+ * Return: sizeof file content.
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -17,9 +19,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	BUFF = malloc(sizeof(char)*letters);
-	RD = read(fd,BUFF,letters);
-	WR = write(STDOUT_FILENO,BUFF, RD);
+	BUFF = malloc(sizeof(char) * letters);
+	RD = read(fd, BUFF, letters);
+	WR = write(STDOUT_FILENO, BUFF, RD);
 
 	free(BUFF);
 	close(fd);
