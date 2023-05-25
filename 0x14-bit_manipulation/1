@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include "main.h"
+
+
+/**
+ * insert_nodeint_at_index - inserts a new node at a given position.
+ * @head: A variable of pointer to struct
+ * @idx: nth position
+ * @n: data
+ *
+ * Return: pointer.
+ */
+
+unsigned int binary_to_uint(const char *b)
+{
+	unsigned int len = 0;
+	unsigned int Dec_value = 0;
+
+	for (; *b != '\0'; b++)
+	{
+		len++;
+	}
+	if (*b == NULL)
+		return (0);
+	else if ((*b == 0) | (*b == 1))
+	{
+		for (; *b != '\0'; b++)
+		{
+			if (*b == 1)
+			Dec_value += 1 << (len - 1);
+		}
+		return (Dec_value);
+	}
+	else
+	return (0);
+}
