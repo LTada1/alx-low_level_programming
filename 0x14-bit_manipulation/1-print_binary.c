@@ -2,9 +2,7 @@
 #include <stdio.h>
 
 /**
- * insert_nodeint_at_index - inserts a new node at a given position.
- * @head: A variable of pointer to struct
- * @idx: nth position
+ * print_binary - inserts a new node at a given position.
  * @n: data
  *
  * Return: pointer.
