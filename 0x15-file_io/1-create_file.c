@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
-#include <string.h>
+
 
 /**
  * create_file - Create a new file
@@ -11,18 +10,22 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
-	int str;
-	int WR;
+	int i;
+	int cont;
+	int file;
 
-	str = strlen(text_content);
-	fd = open(filename, O_CREAT | O_RDWR, 0600);
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
-	WR = write(fd, text_content, str);
-
-	if (fd == -1 || WR == -1)
+	i = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (i == -1)
 		return (-1);
-	close(fd);
-	return (1);
+	if (!text_content)
+		text_content = "";
+	for (cont = 0; text_content[cont]; cont++)
+	;
+	file = write(i, text_content, cont);
+	if (file == -1)
+		return (-1);
+	close(i);
+return (1);
 }
