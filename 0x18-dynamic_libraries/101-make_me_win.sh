@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/lroudge/holbertonschool-low_level_programming/raw/master/0x17-dynamic_libraries/libmask.so
-export LD_PRELOAD=/tmp/libmask.so
+gcc -shared -o printit.so -fPIC jackpot.c
+export LD_PRELOAD=./printit.so:$LD_LIBRARY_PATH
