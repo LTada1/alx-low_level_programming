@@ -16,11 +16,11 @@ char *_strdup(char *str)
 	char *dup_cate;
 	unsigned int n;
 	unsigned int i;
-	n = strlen(str);
 
+	n = strlen(str);
 	if (str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	dup_cate = (char *)malloc(sizeof(char) * n);
 	if (dup_cate == NULL)
