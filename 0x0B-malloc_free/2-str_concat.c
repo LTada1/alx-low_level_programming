@@ -16,6 +16,7 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int n;
 	int m;
+	int j;
 	char *dest;
 
 	if (s1 == NULL || s1[0] == '\0')
@@ -34,13 +35,13 @@ char *str_concat(char *s1, char *s2)
 		printf("failed to allocate memory\n");
 		return (NULL);
 	}
-	for (i = 0; i < m && s1[i] != 0; i++)
+	for (i = 0; s1[i] != 0; i++)
 	{
 		dest[i] = s1[i];
 	}
-	for (i = 0; s2[i]; i++)
+	for (j = 0; s2[j]; j++)
 	{
-		dest[n + i] = s2[i];
+		dest[i + j] = s2[j];
 	}
 	dest[m + n] = '\0';
 	return (dest);
