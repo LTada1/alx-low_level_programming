@@ -22,10 +22,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	dup_cate = (char *)malloc(sizeof(char) * n);
+	dup_cate = (char *)malloc((sizeof(char) * n) + 1);
 	if (dup_cate == NULL)
 	{
-		return (NULL);
+		return ("failed to allocate memory\n");
 	}
 	for (i = 0; i < n && str[i] != 0; i++)
 	{
