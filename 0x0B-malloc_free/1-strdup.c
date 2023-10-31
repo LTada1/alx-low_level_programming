@@ -17,24 +17,25 @@ char *_strdup(char *str)
 	unsigned int n;
 	unsigned int i;
 
-	n = strlen(str);
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	n = strlen(str);
 	dup_cate = (char *)malloc((sizeof(char) * n) + 1);
 	if (dup_cate == NULL)
 	{
-		return ("failed to allocate memory\n");
+		printf("failed to allocate memory\n");
+		return (NULL);
 	}
 	for (i = 0; i < n && str[i] != 0; i++)
 	{
-		dup_cate[i] = str[i];
+	dup_cate[i] = str[i];
 	}
 	for ( ; i < n; i++)
 	{
 		dup_cate[i] = '\0';
 	}
 	return (dup_cate);
-	free(dup_cate);
 }
