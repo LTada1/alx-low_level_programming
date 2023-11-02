@@ -6,7 +6,7 @@
 /**
  * free_grid - frees a 2 dimensional grid
  * @grid: array
- * @heigt: number of rows 
+ * @height: number of rows
  *
  * Return: Always 0.
  */
