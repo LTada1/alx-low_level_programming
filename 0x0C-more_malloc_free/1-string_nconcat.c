@@ -37,14 +37,7 @@ for (i = 0; i < a; i++)
 {
 str[i] = s1[i];
 }
-if (n == b || n >= b)
-{
-for (j = 0; j < b; j++)
-str[i + j] = s2[j];
-}
-else
-for (j = 0; j < n; j++)
-{
+for (j = 0; j < n && j < b; j++)
 str[i + j] = s2[j];
 }
 str[a + n] = '\0';
