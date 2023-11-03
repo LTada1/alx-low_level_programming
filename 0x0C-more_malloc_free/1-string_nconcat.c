@@ -28,7 +28,7 @@ s2 = "";
 }
 a = strlen(s1);
 b = strlen(s2);
-str = malloc(sizeof(char) * (a + n));
+str = malloc(sizeof(char) * (a + n + 1));
 if (str == NULL)
 {
 return (NULL);
@@ -42,6 +42,7 @@ if (n == b || n >= b)
 for (j = 0; j < b; j++)
 str[i + j] = s2[j];
 }
+else
 for (j = 0; j < n; j++)
 {
 str[i + j] = s2[j];
