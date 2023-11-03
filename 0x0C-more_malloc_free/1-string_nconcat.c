@@ -18,6 +18,14 @@ char *str;
 unsigned int a, b;
 unsigned int i, j;
 
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
 a = strlen(s1);
 b = strlen(s2);
 str = malloc(sizeof(char) * (a + n));
