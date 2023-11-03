@@ -43,6 +43,6 @@ for (j = 0; j < con_ln; j++)
 {
 str[i + j] = s2[j];
 }
-str[a + n] = '\0';
+str[i + j] = '\0';
 return (str);
 }
