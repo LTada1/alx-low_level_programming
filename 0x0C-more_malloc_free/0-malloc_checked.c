@@ -4,9 +4,8 @@
 #include <stdlib.h>
 
 /**
- * free_grid - allocates memory using malloc
- * @grid: array
- * @height: number of rows
+ * malloc_checked - allocates memory using malloc
+ * @b: number of bytes
  *
  * Return: Always 0.
  */
@@ -17,7 +16,7 @@ void *ptr;
 ptr = malloc(b);
 if (ptr == NULL)
 {
-exit (98);
+exit(98);
 }
 return (ptr);
 }
