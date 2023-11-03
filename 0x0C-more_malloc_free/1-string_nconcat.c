@@ -38,6 +38,7 @@ for (i = 0; i < a; i++)
 str[i] = s1[i];
 }
 for (j = 0; j < n && j < b; j++)
+{
 str[i + j] = s2[j];
 }
 str[a + n] = '\0';
