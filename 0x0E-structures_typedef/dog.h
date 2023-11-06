@@ -1,7 +1,15 @@
 #ifndef DOG_H
 #define DOG_H
 
-struct dog {
+/**
+ * struct dog - struct variable
+ * @name: element of struct dog
+ * @age: element of struct dog
+ * @owner: element of struct dog
+ */
+
+struct dog
+{
 char *name;
 float age;
 char *owner;
