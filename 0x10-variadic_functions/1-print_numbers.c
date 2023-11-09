@@ -24,7 +24,9 @@ for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(var_ar, unsigned int));
 if (i < (n - 1) && separator != NULL)
+{
 printf("%s", separator);
+}
 }
 va_end(var_ar);
 printf("\n");
