@@ -16,10 +16,6 @@ va_list var_ar;
 unsigned int i;
 char *str;
 
-if (n == 0)
-{
-return;
-}
 va_start(var_ar, n);
 for (i = 0; i < n; i++)
 {
