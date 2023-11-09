@@ -21,7 +21,11 @@ if (min > max)
 return (NULL);
 }
 ptr = malloc(sizeof(int) * (max - min) + 1);
-for (i = 0; i < max - min; i++)
+if (ptr == NULL)
+{
+return (NULL);
+}
+for (i = 0; i <= max - min; i++)
 {
 ptr[i] = min + i;
 }

@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+
+/**
+ * _strlen - measure string length
+ * @str: string variable
+ * Return: length od a string;
+*/
+
+int _strlen(char *str)
+{
+int i, len = 0;
+for (i =0; str[i] != '\0'; i++)
+{
+len++;
+}
+return (len);
+}
+
+/**
+ * new_dog - create new struct
+ * @name: member of struct
+ * @owner: member of struct
+ * @age: member of struct
+ * Return: Does not return;
+*/
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+struct dog *dog_n;
+int i, len1, len2;
+
+dog_n = malloc(sizeof(struct dog));
+if (dog_n == NULL)
+{
+return (NULL);
+}
+len1 = _strlen(name);
+name = malloc(sizeof(char) * len1  + 1);
+for (i = 0; i < len1; i++)
+{
+dog_n->name[i] = name[i];
+}
+dog_n[i] = '\0';
+len2 = _strlen(owner);
+owner = malloc(sizeof(char) * len2 + 1);
+for (i = 0; i < len2; i++)
+{
+dog_n->owner[i] = owner[i];
+}
+dog_n[i] = '\0';
+dog_n->age = age;
+return (dog_n);
+}
