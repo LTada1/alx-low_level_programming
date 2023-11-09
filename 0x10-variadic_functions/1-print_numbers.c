@@ -15,11 +15,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 va_list var_ar;
 unsigned int i, var;
 
-if (n == 0)
-{
-return;
-}
-
 va_start(var_ar, n);
 for (i = 0; i < n; i++)
 {
