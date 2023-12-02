@@ -1,50 +1,3 @@
-<<<<<<< HEAD
-#include "main.h"
-
-/**
-* append_text_to_file - Appends text.
-* @filename: text string
-* @text_content: file appended to.
-*
-* Return: 1 on success and -1 on failure.
-*/
-
-int append_text_to_file(const char *file_name, char *content)
-{
-int fd;
-int byte_count;
-int write_result;
-
-if (!file_name)
-{
-return -1;
-}
-
-fd = open(file_name, O_WRONLY | O_APPEND);
-
-if (fd == -1)
-{
-return -1;
-}
-
-if (content)
-{
-for (byte_count = 0; content[byte_count]; byte_count++)
-;
-
-write_result = write(fd, content, byte_count);
-
-if (write_result == -1)
-{
-return -1;
-}
-}
-
-close(fd);
-
-return 1;
-}
-=======
 #include "main.h"
 
 /**
@@ -90,4 +43,3 @@ close(fd);
 
 return (1);
 }
->>>>>>> f73e4fa770b8aa993f49bc4ef9fa66f7de8c5e08
