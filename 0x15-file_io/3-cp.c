@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* file_copy - Check file opening.
+* error_file - Check file opening.
 * @file_from: file to check.
 * @file_to: check destination.
 * @argv: character array.
