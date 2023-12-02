@@ -7,31 +7,39 @@
 *
 * Return: 1 on success and -1 on failure.
 */
-int append_text_to_file(const char *filename, char *text_content)
+
+int append_text_to_file(const char *file_name, char *content)
 {
-int i;
-int j;
-int k;
+int fd;
+int byte_count;
+int write_result;
 
-if (!filename)
-return (-1);
-
-a = open(filename, O_WRONLY | O_APPEND);
-  
-if (i == -1)
-return (-1);
-
-if (text_content)
+if (!file_name)
 {
-for (j = 0; text_content[j]; j++)
-;
-k = write(a, text_content, j);
-
-if (k == -1)
-return (-1);
+return -1;
 }
 
-close(i);
+fd = open(file_name, O_WRONLY | O_APPEND);
 
-return (1);
+if (fd == -1)
+{
+return -1;
+}
+
+if (content)
+{
+for (byte_count = 0; content[byte_count]; byte_count++)
+;
+
+write_result = write(fd, content, byte_count);
+
+if (write_result == -1)
+{
+return -1;
+}
+}
+
+close(fd);
+
+return 1;
 }
