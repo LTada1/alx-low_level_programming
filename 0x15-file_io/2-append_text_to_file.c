@@ -15,21 +15,16 @@ int byte_count;
 int write_result;
 
 if (!file_name)
-{
 return (-1);
-}
 
 fd = open(file_name, O_WRONLY | O_APPEND);
 
 if (fd == -1)
-{
 return (-1);
-}
-
+  
 if (content)
 {
-for (byte_count = 0; content[byte_count]; byte_count++)
-;
+for (byte_count = 0; content[byte_count]; byte_count++);
 
 write_result = write(fd, content, byte_count);
 
