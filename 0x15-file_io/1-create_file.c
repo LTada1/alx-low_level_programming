@@ -14,30 +14,30 @@ int file_descriptor;
 int character_count;
 int write_result;
 
-if (!file_name)
-return -1;
+if (!filename)
+return (-1);
 
-file_descriptor = open(file_name, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+file_descriptor = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 if (file_descriptor == -1)
 {
   return (-1);
 }
 
-if (!content)
+if (!text_content)
 {
-  content = "";
+  text_content = "";
 }
 
-for (character_count = 0; content[character_count]; character_count++);
-{
-write_result = write(file_descriptor, content, character_count);
+for (character_count = 0; text_content[character_count]; character_count++);
+
+write_result = write(file_descriptor, text_content, character_count);
 
 if (write_result == -1)
 { 
  return (-1);
 }
-}
+
 close(file_descriptor);
 
 return (1);
