@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* error_file - Check file opening.
+* file_copy - Check file opening.
 * @file_from: file to check.
 * @file_to: check destination.
 * @argv: character array.
@@ -10,7 +10,7 @@
 */
 
 
-void error_file(int file_from, int file_to, char *argv[])
+void file_copy(int file_from, int file_to, char *argv[])
 {
 if (file_from == -1)
 {
@@ -46,10 +46,10 @@ exit(97);
 
 file_from = open(argv[1], O_RDONLY);
 file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-error_file(file_from, file_to, argv);
+file_copyfile_from, file_to, argv);
 
 i = 1024;
-while (tally == 1024)
+while (i == 1024)
 {
 i = read(file_from, BUFF, 1024);
 if (i == -1)
