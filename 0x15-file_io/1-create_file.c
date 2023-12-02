@@ -11,7 +11,7 @@
 int create_file(const char *filename, char *text_content)
 {
 int file_descriptor;
-int character_count;
+int i;
 int write_result;
 
 if (!filename)
@@ -25,9 +25,9 @@ return (-1);
 if (!text_content)
 text_content = "";
 
-for (character_count = 0; text_content[character_count]; character_count++);
+for (i = 0; text_content[i]; i++);
 
-write_result = write(file_descriptor, text_content, character_count);
+write_result = write(file_descriptor, text_content, i);
 
 if (write_result == -1)
 return (-1);
