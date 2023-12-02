@@ -25,7 +25,6 @@ return (-1);
 if (text_content)
 {
 for (byte_count = 0; text_content[byte_count]; byte_count++);
-
 write_result = write(fd, text_content, byte_count);
 
 if (write_result == -1)
