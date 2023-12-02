@@ -21,7 +21,7 @@ fd = open(file_name, O_WRONLY | O_APPEND);
 
 if (fd == -1)
 return (-1);
- 
+
 if (text_content)
 {
 for (byte_count = 0; text_content[byte_count]; byte_count++);
