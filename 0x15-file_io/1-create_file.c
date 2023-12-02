@@ -7,32 +7,37 @@
 *
 * Return: 1 on success & 0 on failure.
 */
-int create_file(const char *filename, char *text_content)
+
+int create_file(const char *filename, char *text_content) {
+int file_descriptor;
+int character_count;
+int write_result;
+
+if (!file_name) { return -1; }
+
+file_descriptor = open(file_name, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+if (file_descriptor == -1)
 {
-int i;
-int j;
-int k;
+  return (-1);
+}
 
-if (!filename)
-return (-1);
+if (!content)
+{
+  content = "";
+}
 
-a = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-
-if (i == -1)
-return (-1);
-
-if (!text_content)
-text_content = "";
-
-for (i = 0; text_content[i]; i++)
+for (character_count = 0; content[character_count]; character_count++)
 ;
 
-j = write(a, text_content, i);
+write_result = write(file_descriptor, content, character_count);
 
-if (j == -1)
-return (-1);
+if (write_result == -1)
+{ 
+ return (-1);
+}
 
-close(i);
+close(file_descriptor);
 
 return (1);
 }
