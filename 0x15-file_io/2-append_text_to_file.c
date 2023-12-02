@@ -22,11 +22,11 @@ fd = open(file_name, O_WRONLY | O_APPEND);
 if (fd == -1)
 return (-1);
   
-if (content)
+if (text_content)
 {
-for (byte_count = 0; content[byte_count]; byte_count++);
+for (byte_count = 0; text_ontent[byte_count]; byte_count++);
 
-write_result = write(fd, content, byte_count);
+write_result = write(fd, text_content, byte_count);
 
 if (write_result == -1)
 {
